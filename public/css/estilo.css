@@ -1,0 +1,66 @@
+p {
+    color: blue;
+    font-size: 80%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background-color: rgb(180, 156, 125);
+}
+
+h2 {
+    color: chartreuse;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal {
+    font-size: 50px;
+    border: darkslategrey;
+    border-style: double;
+    border-radius: 3px;
+    background-color: rgb(0, 132, 255);
+    text-align: center;
+}
+
+.rojo {
+    color: darkred;
+    border: 3px solid black;
+}
+
+#boton {
+    color: darkred;
+    background-color: slateblue;
+}
+
+#mono {
+    width: 40%;
+    height: 40%;
+    margin-left: 280px;
+    margin-right: 280px;
+}
+
+/*  # es id y .es clase */
+
+span {
+    font-size: 28px;
+    color: khaki;
+}
+
+h3 {
+    color: black;
+    background-color: crimson;
+    border-radius: 3px;
+    border-style: groove;
+}
+
+#tamvideo {
+    width: 80%;
+    max-height: 200px;
+}
+
+.azul {
+    color: rgb(8, 7, 7);
+    font-size: 200%;
+    border: 3px solid black
+}

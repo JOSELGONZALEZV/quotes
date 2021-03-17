@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>citas por autor</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <script src="/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <form action="/" method="POST">
+        <div class="container">
+
+        
+            <h1>Here are the awesome quotes!</h1>
+
+            <% if (mensaje !="" ) { %>
+    
+                <div class="alert alert-success">
+                  <%= mensaje %>
+                </div>
+      
+            <% } %>
+    
+            
+            <% if (mensaje !="" ) { %>
+    
+                <div class="alert alert-danger">
+                  <%= error %>
+                </div>
+      
+            <% } %>
+        </div>
+
+     
+        <% for (cities_exprut of quotes) { %>
+            <p>author: <%=cities_exprut.author%></p>
+            <p>quote: <%=cities_exprut.quote%></p>
+            <li>
+                <a href="/delete/<%=cities_exprut.id %>"> eliminar </a>
+                <a href="/edit/<%=cities_exprut.id %>">editar</a>
+            </li>
+            <% } %>
+
+                <a class="btn btn-primary" href="/" role="button">retorno</a>
+    </form>
+</body>
+
+</html>

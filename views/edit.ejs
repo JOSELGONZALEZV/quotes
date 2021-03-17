@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit</title>
+
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <script src="/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+
+    
+    <h1>Edit cites : <%=cites_arutedit.quote %></h1>
+
+    <% if (mensaje !="" ) { %>
+
+        <div class="alert alert-success">
+          <%= mensaje %>
+        </div>
+
+    <% } %>
+
+    
+    <% if (mensaje !="" ) { %>
+
+        <div class="alert alert-danger">
+          <%= error %>
+        </div>
+
+    <% } %>
+</div>
+    
+    <form action="/edit/<%=cites_arutedit.id %>" method="POST">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">author:</label>
+            <input required type="text" class="form-control" id="text" aria-describedby="emailHelp" name="author" value="<%=cites_arutedit.author %>">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">quote:</label>:</label>
+            <input required type="text" class="form-control" id="exampleInputPassword1" name="quote" value="<%=cites_arutedit.quote %>">
+          </div>
+          <button type="submit" class="btn btn-primary">editar</button>
+    </form>   
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        
+       
+    </body>
+
+</html>
